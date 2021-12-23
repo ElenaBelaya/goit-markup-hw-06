@@ -368,15 +368,36 @@
 
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
+      <form class="form-modal">
+        <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+        <label class="form-label">
+          <span class="label-text">Имя</span>
+          <input type="text" class="form-input" name="user name">
+        </label>
+        <label class="form-label">
+          <span class="label-text">Телефон</span>
+          <input type="tel" class="form-input" name="user phone">
+        </label>
+        <label class="form-label">
+          <span class="label-text">Почта</span>
+          <input type="email" class="form-input" name="user mail">
+        </label>
+        <label class="form-label">
+          <span class="label-text">Комментарий</span>
+          <textarea name="user comments" class="form-comments" placeholder="Введите текст"></textarea>
+        </label>
+      </form>
       <p></p>
       <button class="close-modal" data-modal-close>
         <svg class="modal-svg">
           <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
           </svg>
       </button>
+      </div>
+     </div>
 
-    </div>
-  </div>
+
+
   <script src="./js/modal.js"></script>
 </body>
 </html>
