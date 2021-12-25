@@ -707,7 +707,6 @@ footer {
   text-decoration: none;
 }
 .form-icon {
-  color: #000000;
   background-color: var(--accent-color);
   fill: #000000;
 }
