@@ -371,6 +371,9 @@
       <form class="form-modal">
         <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
         <label class="form-label">
+          <svg class="form-icon" width="20" height="20">
+            <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+          </svg>
           <span class="label-text">Имя</span>
           <input type="text" class="form-input" name="user name">
         </label>
@@ -379,6 +382,10 @@
           <input type="tel" class="form-input" name="user phone">
         </label>
         <label class="form-label">
+          <svg class="form-icon" width="20" height="20">
+            <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+          </svg>
+          
           <span class="label-text">Почта</span>
           <input type="email" class="form-input" name="user mail">
         </label>
@@ -386,6 +393,11 @@
           <span class="label-text">Комментарий</span>
           <textarea name="user comments" class="form-comments" placeholder="Введите текст"></textarea>
         </label>
+        <label class="form-agree">
+          <input type="checkbox" class="input-checkbox" name="input-checkbox">
+          <a href="" class="agree-link"><span class="agree-text">Соглашаюсь с рассылкой и принимаю </span>Условия договора</a>
+        </label>
+        <Button type="submit" class="submit-button">Отправить</Button>
       </form>
       <p></p>
       <button class="close-modal" data-modal-close>
