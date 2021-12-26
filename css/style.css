@@ -622,16 +622,17 @@ footer {
   color: #ffffff;
   outline: 1px solid transparent;
 }
-/*box-shadow: 0px 4px 4px 0px #00000026;*/
+.subscription-input:hover,
+.subscription-input:focus {
+  border: 1px solid var(--accent-color);
+}
+
 .subscription-text {
   color: #ffffff;
   text-transform: uppercase;
   font-size: 14px;
   margin-bottom: 20px;
 }
-/*.subscription-input::placeholder {
-  font-size: 16px;
-}*/
 .subscription-button {
   display: inline-block;
   padding: 10px 29px;
@@ -645,6 +646,7 @@ footer {
   padding: 10px auto;
   color: #ffffff;
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .subscription-box {
   position: relative;
@@ -817,7 +819,3 @@ footer {
   border-radius: 2px;
   margin-right: 9px;
 }
-
-/*.icon-agree {
-  fill: #000000;
-}*/
