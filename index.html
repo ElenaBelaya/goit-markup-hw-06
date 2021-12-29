@@ -367,12 +367,9 @@
         <h2 class="subscription-text">Подпишитесь на рассылку</h2>
         <label class="subscription-label">
           <input class="subscription-input" type="email" name="user e-mail" placeholder="E-mail">
-          <div class="subscription-box">
-          <button type="submit" class="subscription-button">Подписаться</button>
-          <svg class="subscription-icon" width="24px" height="24px">
+          <button type="submit" class="subscription-button">Подписаться <svg class="subscription-icon" width="24px" height="24px">
             <use href="./images/icons.svg#icon send"></use>
-          </svg>
-         </div>
+          </svg></button>     
         </label>
       </form>
     </div>
@@ -384,32 +381,32 @@
         <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
         <label class="form-label">
           <span class="label-text">Имя</span>
-          <div class="input-box">
+          <span class="input-box">
             <input type="text" class="form-input" name="user name">
             <svg width="20px" height="20px" class="form-icon">
             <use href="./images/icons.svg#person-black-18dp-1"></use>
             </svg>
-           </div>
+          </span>
         </label>
         <label class="form-label">
           <span class="label-text">Телефон</span>
-          <div class="input-box">
+          <span class="input-box">
             <input type="tel" class="form-input" name="user phone">
           <svg class="form-icon" width="20px" height="20px">
           <use href="./images/icons.svg#phone-black-18dp-1"></use>
           </svg>
-          </div>
+          </span>
         </label>
         <label class="form-label">
           <span class="label-text">Почта</span>
-          <div class="input-box">
+          <span class="input-box">
          <input type="email" class="form-input" name="user mail">
           <svg class="form-icon" width="20px" height="20px">
           <use href="./images/icons.svg#email-black-18dp-1"></use>
           </svg>
-          </div>
+          </span>
         </label>
-        <label class="form-label">
+        <label class="form-label-comments">
           <span class="label-text">Комментарий</span>
           <textarea name="user comments" class="form-comments" placeholder="Введите текст"></textarea>
         </label>
@@ -423,7 +420,6 @@
         </label>
         <Button type="submit" class="submit-button">Отправить</Button>
       </form>
-      <p></p>
       <button class="close-modal" data-modal-close>
         <svg class="modal-svg">
           <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>

@@ -586,6 +586,10 @@ footer {
   margin-bottom: 20px;
 }
 
+.container-logo {
+  flex-grow: 1;
+}
+
 .container-join {
   flex-direction: column;
   margin-left: 70px;
@@ -604,9 +608,7 @@ footer {
 }
 
 .subscription {
-  position: absolute;
-  right: 15px;
-  top: 12px;
+  margin-left: 93px;
 }
 .subscription-input {
   width: 358px;
@@ -634,7 +636,7 @@ footer {
   margin-bottom: 20px;
 }
 .subscription-button {
-  display: inline-block;
+  display: flex;
   padding: 10px 29px;
   text-align: left;
   font-weight: 700;
@@ -644,6 +646,7 @@ footer {
   width: 200px;
   height: 50px;
   padding: 10px auto;
+  margin-left: 12px;
   color: #ffffff;
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -657,9 +660,7 @@ footer {
   flex-direction: row;
 }
 .subscription-icon {
-  position: absolute;
-  top: 13px;
-  right: 28px;
+  margin-left: 10px;
   fill: #ffffff;
 }
 .backdrop {
@@ -716,19 +717,26 @@ footer {
 
 .form-modal {
   display: block;
-  margin: 40px 39px 40px 41px;
+  padding: 40px;
 }
 .form-title {
   margin-bottom: 12px;
 }
-.form-label {
+.form-label,
+.form-label-comments {
   display: flex;
   flex-direction: column;
+}
+.form-label {
+  margin-bottom: 10px;
+}
+
+.form-label-comments {
+  margin-bottom: 20px;
 }
 
 .input-box {
   position: relative;
-  margin-bottom: 10px;
 }
 .label-text {
   font-size: 12px;
@@ -742,14 +750,11 @@ footer {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
-.form-input:hover,
 .form-input:focus,
-.form-comments:hover,
 .form-comments:focus {
   border: 1px solid #2196f3;
   outline: 1px solid transparent;
 }
-.form-input:hover + .form-icon,
 .form-input:focus + .form-icon {
   fill: var(--accent-color);
 }
@@ -761,7 +766,6 @@ footer {
   border-radius: 4px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-  margin-bottom: 20px;
 }
 .form-comments::placeholder {
   color: rgba(117, 117, 117, 0.5);
